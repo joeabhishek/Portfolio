@@ -1,0 +1,83 @@
+.home-bg {
+  background-image: url(../img/backgrounds/HomeBackground.jpg);
+  /*background: #fff;*/
+  opacity: 1;
+}
+
+.ripple-group {
+	font-size: 1.5rem;
+}
+
+
+.navbar-nav {
+		/* old vals */
+	/*position: absolute;
+	top: 50%;
+	right: 0; */
+	/*margin-left: 25%;*/
+	width: 100%;
+	text-align: center;
+	
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+	.navbar-nav>li {
+		float: none;
+	    display: inline-block;
+	}
+	.navbar-fixed-top {
+		height: 60px !important;
+		margin-top: 0px;
+		font-size: 2rem;
+	}
+}
+
+.navbar-header {
+	position: relative;
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+	.navbar-nav {
+		margin-top: 150px;
+		margin-left: 0px;
+	}
+	.navbar-collapse.in {
+    	overflow-y: hidden;
+    	height: 300px; 
+	}
+	.navbar-header {
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
+}
+
+.navbar-collapse {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  box-shadow: none;
+  /*margin-top: 30px;*/
+}
+
+.hs-content-inner div h1 {
+	color: #000000;
+}
+
+.hs-content-inner div p {
+	color: #000000;
+}
+
+/* This is the navbar highlight color. Can be changed with theme. */
+.cl-effect-5 > li.active > a span[data-hover]:before {
+	color: #ff4c05; 
+}
+
+.accent-text {
+	color: #ff4c05;
+}
+
+
