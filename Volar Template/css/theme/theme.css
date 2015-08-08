@@ -1191,7 +1191,7 @@ body ::selection {
           transition: border-color 0.25s;
 }
 .input-field:focus {
-  border: 1px solid #757a86;
+  /*border: 1px solid #757a86;*/
 }
 .textarea {
   border-color: #b8b7cb;

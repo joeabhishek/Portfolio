@@ -3664,7 +3664,7 @@ body {
 .input-field:focus + .input-field,
 .input--filled .input-field {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.5);
+  /*border-color: rgba(0, 0, 0, 0.5);*/
 }
 .btn-contact {
   overflow: hidden;
