@@ -1161,6 +1161,14 @@
                 }
             };
 
+        if(isMobile) {
+            $(".navbar-nav li a").click(function(event) {
+                $(".navbar-collapse").collapse('hide');
+            }); 
+        }
+        
+
+
         // ======================================
         // Refreshing Nav Status On Scroll
         // ======================================
