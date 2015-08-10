@@ -4,10 +4,15 @@
   opacity: 1;
 }
 
+.work01-bg {
+  /*background-image: url(../img/portfolio/work01_lg.jpg);*/
+  background-color: #fff;
+}
+
+
 .ripple-group {
 	font-size: 1.5rem;
 }
-
 
 .navbar-nav {
 		/* old vals */
@@ -58,6 +63,7 @@
 		-webkit-transition: opacity 1s linear 3s;
 		transition: opacity 1s linear 3s;
 	}
+
 }
 
 .navbar-header {
@@ -145,6 +151,26 @@
 /* From Styles.css */
 .section-title {
 	padding-bottom: 50px;
+}
+
+.page-down {
+	position: absolute;
+	left: 48%;
+	bottom: 40px;
+	z-index: 1000;
+	text-align: center;
+	margin:0 auto;
+	font-size: 5rem;
+	display: inline-block;
+	font-weight: 300;	
+}
+
+#chev-down:visited  {
+	color: #ff4c05;
+}
+
+#chev-down:hover {
+	color: #D63E02;
 }
 
 

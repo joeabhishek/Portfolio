@@ -4509,10 +4509,10 @@ li.comment-item {
 .blog-post02-bg {
   background-image: url(../img/blog/blog-post02-bg.jpg);
 }
-.work01-bg {
+/*.work01-bg {
   background-image: url(../img/portfolio/work01_lg.jpg);
 }
-.work02-bg {
+*/.work02-bg {
   background-image: url(../img/portfolio/work02_lg.jpg);
 }
 .work03-bg {
@@ -6784,9 +6784,9 @@ min-width: 768px
     -webkit-filter: blur(12px);
             filter: blur(12px);
   }
-  .section-title {
+  /*.section-title {
     padding-bottom: 90px;
-  }
+  }*/
   /* Works buttons */
   .portfolio-filters .btn {
     min-width: 130px;
