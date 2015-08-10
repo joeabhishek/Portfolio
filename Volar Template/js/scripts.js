@@ -1164,6 +1164,7 @@
         if(isMobile) {
             $(".navbar-nav li a").click(function(event) {
                 $(".navbar-collapse").collapse('hide');
+
             }); 
         }
         
@@ -1241,4 +1242,5 @@
         init_animsition();
         init_map();
     }
+    $('.svg-container').addClass('animate-svg');
 })(jQuery);

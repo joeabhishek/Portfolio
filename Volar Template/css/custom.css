@@ -50,6 +50,14 @@
 	    bottom:10px;
 	    right: 10px;
 	}
+	.svg-container {
+		opacity: 0;
+	}
+	.animate-svg {
+		opacity: 1;
+		-webkit-transition: opacity 1s linear 3s;
+		transition: opacity 1s linear 3s;
+	}
 }
 
 .navbar-header {
@@ -110,6 +118,33 @@
 	text-align: center;
 	margin-bottom: 60px;
 	font-size: 1.7rem;
+}
+
+.card-text {
+	padding: 0 2rem 0 2rem;
+	line-height: 3rem;
+}
+
+.card-section-1 {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.card-section-2 {
+	padding-top: 2rem;
+}
+
+.resume-card {
+	height:420px;
+}
+
+.resume-card-icon {
+	margin-top: 1.5rem;
+}
+
+/* From Styles.css */
+.section-title {
+	padding-bottom: 50px;
 }
 
 
