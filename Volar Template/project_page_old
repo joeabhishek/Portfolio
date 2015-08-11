@@ -51,9 +51,18 @@
 <body>
     <div id="top"></div>
     <div id="page" class="animsition equal" data-animsition-in="fade-in" data-animsition-out="fade-out-up-sm" data-loader-type="loader2" data-page-loader-text="Volar" style="transform-origin: 50% 50vh;">
-        <section id="home-section" class="project-header work01-bg overlay">
+        <section id="home-section" class="project-header work01-bg overlay half-height">
             <div class="hs-content">
-                <!-- <img  class ="project-header-image" src="img/portfolio/work01/header-bg.jpg"/>                     -->
+                <div class="hs-content-inner">
+                    <img src="../img/portfolio/work01/header-bg.jpg"/>
+                    <div class="work-header"></div>
+                    <div class=" init-animation-2 delay0-4s">
+                        <h1 class="hs-text-11">ennax group</h1>
+                    </div>
+                    <div class="init-animation-2 delay0-6s">
+                        <h2 class="hs-text-6">volar, a template at the heart of the beauty</h2>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- page-header -->
@@ -124,44 +133,53 @@
         <!--/ End Navbar -->
         <!-- Do not remove the div below if you want to a sticky navbar! -->
         <div id="about-section"></div>
-        <section class="container" >
-            <img  class ="project-header-image" src="img/portfolio/work01/header-bg.jpg"/>                    
+        <section class="container section">
             <div id="workCopy">
-                <div class=" text-left">
+                <div class="section-title text-left padding-bottom-50">
                     <div>
-                        <h2 class="section-title-heading"><span>Glass Companion</span></h2>
+                        <h2 class="section-title-heading"><span>Ennax Group</span> project</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-9">
-                        <p class="workDesc">Glass Companion is a system where users interact with data on their phone or web through hand gestures and a heads-up display instead of touch gestures on the phone. This touchless data interaction provides hand free information. This new interaction system is quiet, mobile and hands-free.</p>
-                        <img class="img-responsive  padding-bottom-60" src="img/portfolio/work01/work01-section-bg.jpg" alt="">
+                        <p class="workDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum sapiente ab facere numquam explicabo doloremque nesciunt iure labore nam facilis, quae ullam vel magnam, ipsum cumque pariatur deserunt sit nihil.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sed, quos mollitia voluptas! Omnis enim saepe, facere qui est odit voluptas. Quod consectetur odio at necessitatibus quo soluta dignissimos modi!</p>
                     </div>
-                    <div class="col-sm-3 project-sidebar">
+                    <div class="col-sm-3  text-right">
                         <a href="blog.html" class="btn btn-animated btn-split btn-dark-transparent ripple-alone animsition-link" data-animsition-out="fade-out-up-sm" data-animsition-out-duration="500" data-text="lunch project"><span>go to the website</span></a>
-                        
-                        <div class="sidebar-section">
-                            <p>Team</p>
-                            <a href="https://www.linkedin.com/pub/yhareli-chamboneth/37/b00/27"> Yhareli Chamboneth</a>
-                            <br>
-                            <a href="https://www.linkedin.com/pub/manisha-yogan/71/647/5b"> Manisha Yogan </a>
-                            <br>
-                            <a href="https://www.linkedin.com/pub/dushyant-shrikhande/b9/a87/b57"> Dushyanth Shrikhande</a>
-                            <br>
-                            <a href="https://www.linkedin.com/pub/abdulaziz-alderhami/82/10b/405"> Adbulaziz Alderhami </a>
-                        </div>
-
-                        <div class="sidebar-section">
-                            <p>My Key Contributions</p>
-                            <span>Need Finding</span><br/>
-                            <span>Product Design</span><br/>
-                            <span>Storyboards</span><br/>
-                            <span>System Architecture Design</span><br/>
-                            <span>Mobile Development</span>
-                        </div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="work-category-title col-md-12">
+                        <h4>SERVICES</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="category-item">User Experience</div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="category-item"> Concept Development</div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="category-item"> Art Direction &amp; Design</div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="category-item"> Responsive Design</div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="category-item"> Front-end &amp; Back-end Development</div>
+                    </div>
+                </div>
+            </div>
         </section>
-        
+        <div class="container">
+            <img class="img-responsive  padding-bottom-60" src="http://placehold.it/1440x900" alt="">
+            <div class="padding-bottom-60">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="http://www.youtube.com/embed/w2JUhDd0CAA" frameborder="0" allowfullscreen=""></iframe>
+                    <!--  <iframe src="https://player.vimeo.com/video/90079547?color=ffffff&amp;title=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+                </div>
+            </div>
+            <img class="img-responsive  padding-bottom-60" src="http://placehold.it/1440x900" alt="">
+        </div>
         <div class="full-screen middle-poster overlay work02-bg">
             <div class="table">
                 <div class="table-cell">

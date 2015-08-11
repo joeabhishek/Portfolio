@@ -2924,6 +2924,7 @@ body {
   height: calc(100% - 40px);
 }
 .portfolio-item-info {
+  color: white;
   position: absolute;
   width: 80%;
   overflow: visible;
@@ -2936,7 +2937,7 @@ body {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.portfolio-item-title {
+/*.portfolio-item-title {
   margin-bottom: 25px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -2949,7 +2950,8 @@ body {
   -webkit-transform: translate3d(0, 20px, 0) scale(1.15);
           transform: translate3d(0, 20px, 0) scale(1.15);
 }
-.portfolio-item-detail p {
+*/
+/*.portfolio-item-detail p {
   margin-bottom: 25px;
   font-size: 14px;
   line-height: 1.2;
@@ -2958,7 +2960,7 @@ body {
 .portfolio-item-detail a {
   padding: 0 10px;
   font-size: 28px;
-}
+}*/
 .portfolio-item:hover .portfolio-item-img img {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -4512,7 +4514,8 @@ li.comment-item {
 /*.work01-bg {
   background-image: url(../img/portfolio/work01_lg.jpg);
 }
-*/.work02-bg {
+*/
+.work02-bg {
   background-image: url(../img/portfolio/work02_lg.jpg);
 }
 .work03-bg {
@@ -4808,11 +4811,12 @@ li.comment-item {
   width: 100%;
   /* iPad in portrait*/
   /* iPad in landscape */
-  /* iPhone 5 & 5S in portrait */
+  /*iPhone 5 & 5S in portrait */
   /* iPhone 5 & 5S in landscape */
   /* iPhone 2G-4S in portrait */
   /* iPhone 2G-4S in landscape */
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .half-height {
     height: 799px;

@@ -5,10 +5,17 @@
 }
 
 .work01-bg {
-  /*background-image: url(../img/portfolio/work01_lg.jpg);*/
+  /*background-image: url(../img/backgrounds/work01-section-bg.jpg);*/
+  /*background-size: 100% auto;*/
   background-color: #fff;
 }
 
+.project-header-image {
+	margin-top: 10rem;
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 5rem;
+}
 
 .ripple-group {
 	font-size: 1.5rem;
@@ -33,11 +40,13 @@
 		float: none;
 	    display: inline-block;
 	}
+
 	.navbar-fixed-top {
 		height: 60px !important;
 		margin-top: 0px;
 		font-size: 2rem;
 	}
+
 	#pencil{
 		z-index: 1000;
 		width: 64px;
@@ -55,13 +64,20 @@
 	    bottom:10px;
 	    right: 10px;
 	}
+
 	.svg-container {
 		opacity: 0;
 	}
+	
 	.animate-svg {
 		opacity: 1;
 		-webkit-transition: opacity 1s linear 3s;
 		transition: opacity 1s linear 3s;
+	}
+
+	.custom-section-text {
+		padding-right: 10rem;
+		padding-left: 10rem;
 	}
 
 }
@@ -153,10 +169,22 @@
 	padding-bottom: 50px;
 }
 
-.page-down {
+.page-down-1 {
 	position: absolute;
 	left: 48%;
-	bottom: 40px;
+	bottom: 2rem;
+	z-index: 1000;
+	text-align: center;
+	margin:0 auto;
+	font-size: 5rem;
+	display: inline-block;
+	font-weight: 300;	
+}
+
+.page-down-2 {
+	position: absolute;
+	left: 48%;
+	bottom: 0.5rem;
 	z-index: 1000;
 	text-align: center;
 	margin:0 auto;
@@ -172,6 +200,67 @@
 #chev-down:hover {
 	color: #D63E02;
 }
+
+.portfolio-item-title {
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  opacity: 0;
+  font-weight: 700;
+  -webkit-transform: translate3d(0, 20px, 0);
+          transform: translate3d(0, 20px, 0);
+}
+
+.portfolio-item-detail {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 20px, 0) scale(1.15);
+          transform: translate3d(0, 20px, 0) scale(1.15);
+}
+
+.portfolio-item-detail p {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+.portfolio-item-detail a {
+  padding: 0 10px;
+  font-size: 28px;
+}
+
+
+/* portfolio project page*/
+
+.sidebar-section {
+	margin-top: 3rem;
+}
+
+.sidebar-section p{
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}
+
+.sidebar-section span{
+	line-height: 2;
+	font-weight: 500;
+}
+
+.sidebar-section a{
+	line-height: 2;
+	text-decoration: none;
+	font-weight: 500;
+	padding-bottom: 1px;
+    border-bottom: #ff4c05 1px solid;
+}
+
+.sidebar-section a:hover{
+	background-color:#ff4c05;
+	color: white;
+	font-weight: 500;
+	border-bottom: #ff4c05 0px solid;
+}
+
 
 
 

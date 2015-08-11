@@ -996,9 +996,10 @@ body ::selection {
 .video-work:after {
   background: rgba(255, 255, 255, 0.9);
 }
+/*Edited*/
 .colored-mask .portfolio-item-img:after,
 .colored-mask .video-work:after {
-  background: rgba(255, 76, 5, 0.9);
+  background: rgba(0, 0, 0, 0.7);
 }
 .portfolio-item-detail a {
   color: #0c0c17;
