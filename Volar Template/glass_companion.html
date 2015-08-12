@@ -82,8 +82,8 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse top-navbar" id="mobile-navbar-collapse">
                             <ul class="nav navbar-nav cl-effect-5">
-                                <li class="pull-left">
-                                    <a class="ripple-group" href="index.html#portfolio-section">
+                                <li class="pull-left mobile-hide">
+                                    <a class="ripple-group " href="index.html#portfolio-section">
                                         <span data-hover="back">back</i></span>
                                     </a>
                                 </li>
@@ -127,19 +127,56 @@
         <section class="container" >
             <img  class ="project-header-image" src="img/portfolio/work01/header-bg.jpg"/>                    
             <div id="workCopy">
-                <div class=" text-left">
-                    <div>
-                        <h2 class="section-title-heading"><span>Glass Companion</span></h2>
-                    </div>
-                </div>
                 <div class="row">
-                    <div class="col-sm-9">
-                        <p class="workDesc">Glass Companion is a system where users interact with data on their phone or web through hand gestures and a heads-up display instead of touch gestures on the phone. This touchless data interaction provides hand free information. This new interaction system is quiet, mobile and hands-free.</p>
-                        <img class="img-responsive  padding-bottom-60" src="img/portfolio/work01/work01-section-bg.jpg" alt="">
+                    <div class="col-sm-9 project-desc">
+                        <h2 class="section-title-heading"><span>Glass Companion</span></h2>
+                        <p class="workDesc">Glass Companion is a system through which users interact with data on their phone or web through hand gestures and a head-display instead of the traditional touch gestures on phone. This new interaction system is quiet, mobile and hands-free.</p>
+                        <img class="img-responsive" src="img/portfolio/work01/system-illustration.jpg" alt="System Illustration">
+
+                        <h2 class="section-title-heading"><span>The Problem</span></h2>
+                        <p class="workDesc">Smartphones have become the primary source of data for users on the go. Currently, the three most common forms of input for a smartphone are touch, speech, and phone movement recognition. </p>
+
+                        <p>Problems with existing forms of input :<br>
+                            1. If the phone is at a distance, then touch or phone movement recognition are not viable options. <br>
+                            2. Voice commands have both social and privacy concerns. <br>
+                        </p>
+
+                       
+                        <p>To demo the usability of such a system, I built a mobile application through which a user can send and receive messages through simple hand gestures.</p>
+
+                        <h2 class="section-title-heading"><span>System Architecture Design</span></h2>
+                        <p>In order to overcome these limitations, we designed a system where a user can interact with data with through simple hand gestures, anyplace anytime.<br><b>Myo</b> armband is used for is hand gesture recognition.<br><b>Google glass</b> is used a head display.<br><b>Android Phone</b> was used to link these wearables together and perform all the processing involved in this system.<br>
+                        <br><br>
+                        The touch-pad actions on the glass are mapped to intuitive hand gestures which are really easy to learn.</p>
+                        <img class="img-responsive image-margins" src="img/portfolio/work01/gesturemapping.jpg" alt="storyboard">
+
+                        <h2 class="section-title-heading"><span>Message Template Design</span></h2>
+                        <p><b>Design Goals</b> :<br>
+                        1. Easy to read text<br>
+                        2. Signify Affordance<br>
+                        3. Provide visual feedback for actions<br>
+                        <br>
+                        Keeping these goals in mind, we designed these cards for Google Glass which are both easy to read and interactive.
+                        </p>
+                        <img class="img-responsive image-margins" src="img/portfolio/work01/storyboard.jpg" alt="storyboard">
+
+                        <h2 class="section-title-heading"><span>StoryBoard</span></h2>
+                        <p><b>Communication Between a Product Manager and His Technician Simplified</b><br>
+                        Michael and Steve work for an automobile company. They have developed a new technology for fuel injection. Michael is in charge of presenting the concept to upper management. After the presentation, he plans to escort them to the shop for a demo. Before doing so, Michael sends a text message to Steve using simple hand gestures asking if everything is ready to demo. Since the garage is noisy, Steve does not hear his phone vibrate, but he notices the message on his Glass. Since his hands are dirty, instead of touching the phone, Steve uses hand gestures to select and send the most appropriate message template to reply. By now, Michael is walking towards the shop with the clients and does not want to interrupt their conversation, so he uses Glass to review the message. Thus, data is sent and received through hand gestures.
+                        </p>
+                        <img class="img-responsive image-margins" src="img/portfolio/work01/storyboard.jpg" alt="storyboard">
+
+
                     </div>
                     <div class="col-sm-3 project-sidebar">
-                        <a href="blog.html" class="btn btn-animated btn-split btn-dark-transparent ripple-alone animsition-link" data-animsition-out="fade-out-up-sm" data-animsition-out-duration="500" data-text="lunch project"><span>go to the website</span></a>
-                        
+                                                
+                        <div class="sidebar-section sidebar-section-first-item">
+                            <p>Source Code</p>
+                            <a href="https://github.com/joeabhishek/Glass-Companion">Mobile App</a>
+                            <br>
+                            <a href="https://github.com/joeabhishek/Glass-Templates">Google Glass App</a>
+                        </div>
+
                         <div class="sidebar-section">
                             <p>Team</p>
                             <a href="https://www.linkedin.com/pub/yhareli-chamboneth/37/b00/27"> Yhareli Chamboneth</a>
@@ -159,22 +196,25 @@
                             <span>System Architecture Design</span><br/>
                             <span>Mobile Development</span>
                         </div>
+
+                        <div class="sidebar-section">
+                            <p>Methods</p>
+                            <span>Literature Review</span><br/>
+                            <span>Domain Research</span><br/>
+                            <span>Prototyping</span><br/>
+                            <span>User Testing</span><br/>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <p>Tools</p>
+                            <span>Android</span><br/>
+                            <span>Photoshop</span><br/>
+                            <span>Sketch.app</span><br/>
+                        </div>
+
                 </div>
         </section>
         
-        <div class="full-screen middle-poster overlay work02-bg">
-            <div class="table">
-                <div class="table-cell">
-                    <div class="container">
-                        <div class="text-center font-second page-header-title-middle">
-                            <h1 class="hs-text-10 wow fadeInDown">ultimate <span>beauty</span></h1>
-                            <h4 class="hs-text-6 wow fadeInUp">an important piece of our hall of fame</h4>
-                        </div>
-                    </div>
-                    <!-- container -->
-                </div>
-            </div>
-        </div>
         <div class="portfolio-nav row">
             <a href="project_page01.html" class="prev-proj col-sm-5 col-xs-4 animsition-link font-second"><i class="ci-icon-uniE8D1"></i> prev project</a>
             <a href="index.html#portfolio-section" class="all-works col-sm-2 col-xs-4 font-second animsition-link "><i class="ci-icon-uniE8DE"></i><span> all works</span></a>

@@ -10,13 +10,6 @@
   background-color: #fff;
 }
 
-.project-header-image {
-	margin-top: 10rem;
-	max-width: 100%;
-	height: auto;
-	padding-bottom: 5rem;
-}
-
 .ripple-group {
 	font-size: 1.5rem;
 }
@@ -231,8 +224,29 @@
 
 /* portfolio project page*/
 
+.project-header-image {
+	margin-top: 10rem;
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 5rem;
+}
+
+.project-desc p, li{
+	font-weight: 500;
+	font-size: 
+}
+
+.project-desc .image-margins{
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+}
+
 .sidebar-section {
 	margin-top: 3rem;
+}
+
+.sidebar-section-first-item {
+	margin-top: 5rem !important;
 }
 
 .sidebar-section p{

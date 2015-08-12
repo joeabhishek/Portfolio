@@ -1,0 +1,684 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"scroll",
+				"scrollToSection"
+			],
+			[
+				"col",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"mobil",
+				"MobileNav"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"Animated",
+				"animatedNavicon"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"med",
+				"media_link"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "glass_companion.html",
+			"settings":
+			{
+				"buffer_size": 22032,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 49105,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "project_page_old",
+			"settings":
+			{
+				"buffer_size": 19354,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/theme/theme.css",
+			"settings":
+			{
+				"buffer_size": 34977,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/custom.css",
+			"settings":
+			{
+				"buffer_size": 4200,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/styles.css",
+			"settings":
+			{
+				"buffer_size": 161216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/contactForm.js",
+			"settings":
+			{
+				"buffer_size": 4094,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// /*global $:false */\n// /*global moment:true */\n(function($) {\n\n    \"use strict\";\n\n    // $window.GLOB = {};\n    var $window = $(window),\n        $winWidth = $window.width(),\n        $page = $(\"#page\");\n\n    // ==============================================\n    // Auto Close Responsive Navbar on Click for small devices\n    // =============================================== \n    var $MobileNav = $(\"#mobile-navbar-collapse\"),\n        $MobileNavAnchor = $MobileNav.find(\"a:not(.dropdown-toggle)\");\n\n    function init_autoclose_navbar() {\n        if ($winWidth <= 767) {\n            $MobileNavAnchor.on(\"click\", function() {\n                $MobileNav.collapse(\"hide\");\n                $animatedNavicon.removeClass(\"opened\");\n            });\n        } else {\n            $MobileNavAnchor.off(\"click\");\n        }\n    }\n\n    // ======================================\n    // Aniamte navicon class toggler\n    // ======================================\n    var $animatedNavicon = $(\"#animated-navicon\");\n\n    function init_animate_navIcon() {\n        $animatedNavicon.on(\"click\", function() {\n            $animatedNavicon.toggleClass(\"opened\");\n        });\n    }\n\n    // ==============================================\n    //     Collapse transparent and elastic navbar\n    // ==============================================\n    var $nav = $(\"#nav\"),\n        $navWrapper = $(\"#nav-wrapper\");\n\n\n    function init_transparent_nav() {\n        if ($navWrapper.hasClass(\"transp-nav\")) {\n            if ($window.scrollTop() < 130) {\n                $nav.addClass(\"navbar-transparent\");\n            } else {\n                $nav.removeClass(\"navbar-transparent\");\n            }\n        }\n        $window.scroll(function() {\n            var scroll = $window.scrollTop();\n            if ($navWrapper.hasClass(\"transp-nav\")) {\n                if (scroll < 130) {\n                    $nav.addClass(\"navbar-transparent\");\n                } else {\n                    $nav.removeClass(\"navbar-transparent\");\n                }\n            }\n            if ($navWrapper.hasClass(\"elastic-nav\")) {\n                if (scroll < 1) {\n                    $nav.addClass(\"navbar-elastic\");\n                } else {\n                    $nav.removeClass(\"navbar-elastic\");\n                }\n            }\n        });\n    }\n\n    // ======================================\n    // Affix the navbar and portfolioNav after scroll below header\n    // ======================================\n    var $stickyNavWrapp = $(\".sticky-navbar\"),\n        $stickyNav = $stickyNavWrapp.find('#nav'),\n        $startOffset = $(\"#about-section\"),\n        $navbarHeight = $stickyNav.height();\n\n    function init_sticky_nav() {\n        if ($stickyNav.length) {\n            if (!$stickyNavWrapp.hasClass(\"transp-nav\")) {\n                $startOffset.addClass(\"margin-top-60\");\n            }\n            $stickyNav.affix({\n                offset: {\n                    top: $startOffset.offset().top + 1.2 * ($navbarHeight)\n                }\n            });\n        }\n    }\n    var $portfolioNav = $(\"#portfolio-nav\");\n\n    function init_sticky_portfolio_nav() {\n        if ($portfolioNav.length) {\n            $portfolioNav.affix({\n                offset: {\n                    top: $portfolioNav.offset().top - 30\n                }\n            });\n        }\n    }\n\n    // ======================================\n    // animate-slideer\n    // ======================================\n    var $animateSlider = $(\"#animate-slider\");\n\n    function init_animateslider() {\n        if ($animateSlider.length) {\n            $animateSlider.animateSlider(8000);\n            $(\".show-indicators .as-indicators\").addClass(\"dotstyle-fall\");\n        }\n    }\n\n    // ======================================\n    //  Youtube Background Video\n    // ======================================\n    var $player = $(\".player\");\n\n    function init_YTPlayer() {\n        if ($player.length) {\n            $(function() {\n                $player.YTPlayer();\n            });\n        }\n    }\n\n    // ======================================\n    //      Fluid Particles\n    // ======================================\n    function init_particlesA() {\n        var $particlsA = $(\"#particles\");\n        if ($particlsA.length) {\n            $particlsA.particleground({\n                minSpeedX: 0.5,\n                minSpeedY: 0.5,\n                dotColor: '#ffffff',\n                lineColor: '#ffffff',\n                density: 8500,\n                particleRadius: 2, // curvedLines: true,\n                parallaxMultiplier: 2.2,\n                proximity: 55\n            });\n        }\n    }\n\n    // ======================================\n    //      Portfilio\n    // ======================================\n    var $isotopeContainer = $(\"#portfolio-container\"),\n        $isotopeFilters = $(\"#portfolio-filters\"),\n        $isotopeFilter = $isotopeFilters.find('a'),\n        filterValue = 0;\n\n    function init_isotope() {\n        if ($isotopeContainer.length) {\n            (function($) {\n                \"use strict\";\n                // \n                // setting the layout mode\n                var isotope_mode;\n                if ($isotopeContainer.hasClass(\"masonry\")) {\n                    isotope_mode = \"masonry\";\n                } else {\n                    isotope_mode = \"fitRows\";\n                }\n                // initial state\n                $(window).load(function() {\n                    $isotopeContainer.isotope({\n                        // options\n                        itemSelector: \".portfolio-item\",\n                        layoutMode: isotope_mode,\n                        filter: filterValue\n                    });\n                });\n                // when filter are clicked\n                $isotopeFilters.on(\"click\", \"a\", function() {\n                    var $this = $(this);\n                    // setting the selected button\n                    $isotopeFilter.removeClass(\"selected\");\n                    $this.addClass(\"selected\");\n                    // setting the filter\n                    filterValue = $this.attr(\"data-filter\");\n                    $isotopeContainer.isotope({\n                        // options\n                        itemSelector: \".portfolio-item\",\n                        layoutMode: isotope_mode,\n                        filter: filterValue,\n                        transitionDuration: \".5s\"\n                    });\n                });\n            })(jQuery);\n        }\n    }\n\n    // ==============================================\n    // Nivo LightBox\n    // =============================================== \n    var $lightbox = $page.find(\".lightbox\");\n\n    function init_lightbox() {\n        if ($lightbox.length) {\n            $lightbox.nivoLightbox({\n                effect: \"slideUp\", // The effect to use when showing the lightbox\n                theme: \"default\", // The lightbox theme to use\n                keyboardNav: true, // Enable/Disable keyboard navigation (left/right/escape)\n                clickOverlayToClose: true, // If false clicking the \"close\" button will be the only way to close the lightbox\n                errorMessage: \"The requested content cannot be loaded. Please try again later.\" // Error message when content can't be loaded\n            });\n        }\n    }\n\n    // ======================================\n    // Owl carousel\n    // ======================================\n    function init_owl_sliders() {\n        // Home slider | 1\n        // -------------\n        $(\"#owl-hs-slider-zoom\").owlCarousel({\n            autoplay: false,\n            animateIn: 'zoomOutIn',\n            animateOut: 'zoomInOut',\n            loop: false,\n            margin: 0,\n            items: 1,\n            rewind: true,\n            dots: true,\n            responsive: {\n                0: {\n                    nav: false\n                },\n                768: {\n                    nav: true\n                }\n            }\n        });\n\n        // Home slider | 2\n        // -------------\n        $(\"#owl-hs-slider\").owlCarousel({\n            // fluidSpeed: true,\n            autoplay: false, // autoplaySpeed:1000,\n            // autoplayTimeout: 8000,\n            // animateIn: 'zoomOutIn',\n            // animateOut: 'zoomInOut',\n            // stagePadding:30,\n            // smartSpeed:450\n            loop: false,\n            margin: 0, // stagePadding:15,\n            // nav: true,\n            // autoplayHoverPause: true,\n            items: 1,\n            smartSpeed: 1000,\n            rewind: true, // center: false,\n            // autoWidth: true,\n            dots: true, // mouseDrag: false,\n            responsive: {\n                0: {\n                    nav: false\n                },\n                768: {\n                    nav: true\n                }\n            }\n        });\n\n        // Home slider | 3\n        // -------------\n        $(\"#owl-hs-slider-text\").owlCarousel({\n            animateOut: 'zoomOut',\n            animateIn: 'flipInX',\n            margin: 0,\n            items: 1,\n            smartSpeed: 500,\n            loop: true,\n            dots: true,\n            responsive: {\n                0: {\n                    nav: false\n                },\n                768: {\n                    nav: true\n                }\n            }\n        });\n\n        // Home slider | 4\n        // -------------\n        $(\"#owl-hs-slider-zoom-out\").owlCarousel({\n            autoplay: true,\n            autoplayTimeout: 4000,\n            animateIn: 'fadeIn',\n            animateOut: 'fadeOut',\n            loop: true,\n            margin: 0,\n            items: 1,\n            // rewind: true,\n            dots: true,\n            responsive: {\n                0: {\n                    nav: false\n                },\n                768: {\n                    nav: true\n                }\n            }\n        });\n\n        // Images slider | 1\n        // -------------\n        var $imgSlider2 = $(\"#images-slider-1\");\n        $imgSlider2.owlCarousel({\n            autoplay: true,\n            autoplaySpeed: 1000,\n            autoplayTimeout: 2000,\n            loop: false,\n            margin: 0,\n            stagePadding: 0,\n            autoplayHoverPause: false,\n            items: 1,\n            smartSpeed: 500,\n            rewind: true,\n            center: false,\n            dots: true,\n            responsive: {\n                0: {\n                    nav: false\n                },\n                768: {\n                    nav: true\n                }\n            }\n        });\n\n        // Images slider | 2\n        // -------------\n        var $imgSlider1 = $(\"#images-slider-2\");\n        $imgSlider1.owlCarousel({\n            autoplay: true,\n            autoplaySpeed: 1000,\n            autoplayTimeout: 2000,\n            loop: true,\n            margin: 0,\n            stagePadding: 0,\n            autoplayHoverPause: false,\n            items: 1,\n            smartSpeed: 500,\n            rewind: true,\n            center: false,\n            dots: true,\n            responsive: {\n                0: {\n                    nav: false\n                },\n                768: {\n                    nav: true\n                }\n            }\n        });\n\n        // Team slider\n        // -------------\n        var $teamCarousel = $(\"#team-carousel\");\n        $teamCarousel.owlCarousel({\n            autoplay: true,\n            autoplaySpeed: 1000,\n            autoplayTimeout: 5000,\n            loop: false,\n            margin: 0,\n            nav: false,\n            autoplayHoverPause: true,\n            smartSpeed: 200,\n            rewind: true,\n            center: false,\n            dots: true,\n            mouseDrag: true,\n            responsive: {\n                0: {\n                    items: 1\n                },\n                667: {\n                    items: 2\n                }\n            }\n        });\n\n        var $teamCarousel3 = $(\"#team-carousel-3\");\n        $teamCarousel3.owlCarousel({\n            // fluidSpeed: true,\n            autoplay: true,\n            autoplaySpeed: 1000,\n            autoplayTimeout: 5000,\n            // animateIn: 'fadeIn',\n            // animateOut: 'fadeOut',\n            // stagePadding:30,\n            // merge: true,\n            // smartSpeed:450\n            loop: true,\n            margin: 0, // stagePadding:15,\n            autoplayHoverPause: true, // items: 6,\n            // smartSpeed: 200, // stagePadding: 200,\n            // rewind: false,\n            center: false, // autoWidth: true,\n            dots: true,\n            nav: false,\n            mouseDrag: true,\n            responsive: {\n                0: {\n                    items: 1\n                },\n                667: {\n                    items: 2\n                },\n                992: {\n                    items: 3\n                }\n            }\n        });\n\n        // Testimonials slider\n        // -------------\n        var $owlTestimon = $(\"#testimonials\");\n        $owlTestimon.owlCarousel({\n            animateIn: 'flipInX',\n            animateOut: 'zoomOut',\n            smartSpeed: 500,\n            items: 1,\n            loop: true,\n            center: true,\n            mouseDrag: true,\n            margin: 10,\n            autoplay: false,\n            autoplayTimeout: 4000,\n            autoplayHoverPause: true,\n            responsive: {\n                0: {\n                    nav: false\n                },\n                768: {\n                    nav: true\n                }\n            }\n        });\n\n        // Clients Logos\n        // -------------\n        var $owlClients = $(\"#client-logos\");\n        $owlClients.owlCarousel({\n            autoplay: true,\n            autoplaySpeed: 1000,\n            autoplayTimeout: 2000,\n            loop: false,\n            stagePadding: 0,\n            autoplayHoverPause: false,\n            smartSpeed: 1200,\n            rewind: true,\n            center: false,\n            dots: false,\n            responsive: {\n                0: {\n                    items: 2,\n                    margin: 20\n                },\n                480: {\n                    items: 3,\n                    margin: 70\n                },\n                768: {\n                    items: 4,\n                    margin: 70\n                },\n                992: {\n                    items: 4,\n                    margin: 100\n                },\n                1200: {\n                    items: 4,\n                    margin: 120\n                }\n            }\n        });\n\n        // Applying Dots And arrows Styles\n        // -------------\n        var $carousel = $(\".carousel\"),\n            $carouselDots = $carousel.find(\".owl-dots\"),\n            $carouselNav = $carousel.find(\".owl-nav:not(.disabled)\"),\n            $carouselPrev = $carouselNav.find(\".owl-prev\"),\n            $carouselNext = $carouselNav.find(\".owl-next\");\n        $carouselDots.addClass(\"dotstyle-fall\");\n        $carouselPrev.addClass(\"left carousel-control\").empty().append(\"<i class='arrow-left'></i>\");\n        $carouselNext.addClass(\"right carousel-control\").empty().append(\"<i class='arrow-right'></i>\");\n        // }\n    }\n\n    // ======================================\n    // Owl Carousel Process line\n    // =====================================\n    // \n    // \n    function init_process_slider() {\n        var $owlCarouselProcess = $(\"#process\");\n        $owlCarouselProcess.owlCarousel({\n            items: 1,\n            smartSpeed: 500,\n            nav: false,\n            margin: 10,\n            mouseDrag: true,\n            autoplayTimeout: 4000,\n            autoplayHoverPause: true\n        });\n        var $owlCarouselDots = $owlCarouselProcess.find(\".owl-dots\"),\n            $processLabes = $(\"#process-section\").find(\".process-labels\"),\n            $processLable = $processLabes.find(\"li\"),\n            $owlCarouselDot = $owlCarouselDots.find(\".owl-dot\");\n        // applying fill dot styles\n        $owlCarouselDots.addClass(\"dotstyle-fillup line-process-mood\");\n        // Creating process line\n        // getting \"data-que\" which we have assigned to teh label and attaching them to te dots \n        var looper = 1;\n        $owlCarouselDot.each(function() {\n            $(this).attr('data-que', looper);\n            looper += 1;\n        });\n        // positioning the dots\n        var perci = 100 / (looper - 2),\n            widthLooper = 0;\n        $owlCarouselDot.each(function() {\n            $(this).css({\n                left: widthLooper * perci + \"%\"\n            });\n            widthLooper += 1;\n        });\n        // positioning the labels\n        var labelLooper = 0;\n        $processLable.each(function() {\n            var $this = $(this),\n                $width = $this.find(\"span\").width();\n            $this.css({\n                left: labelLooper * perci + \"%\",\n                \"margin-left\": (-$width / 2)\n            });\n            labelLooper += 1;\n        });\n        // applying the process line width\n        $owlCarouselDot.on(\"owlDotClassChange\", function() {\n            var lineWidth = $(this).attr('data-que') - 1,\n                lineProcess = $(\".line-process\"),\n                $owlCarouselDotActive = $owlCarouselDots.find(\".owl-dot.active\");\n            lineProcess.width(perci * lineWidth + \"%\");\n            // making the previous dots stay filled\n            $owlCarouselDot.each(function() {\n                var $this = $(this);\n                if ($this.attr('data-que') < $owlCarouselDotActive.attr('data-que')) {\n                    $this.children(\"span\").addClass(\"process-active-dot\");\n                } else {\n                    $this.children(\"span\").removeClass(\"process-active-dot\");\n                }\n            });\n            $processLable.each(function() {\n                var $this = $(this);\n                if ($this.attr('data-que') == $owlCarouselDotActive.attr('data-que')) {\n                    $this.addClass(\"process-label-active\");\n                } else {\n                    $this.removeClass(\"process-label-active\");\n                }\n            });\n        });\n        var $carousel = $(\".carousel\"),\n            $carouselPrev = $carousel.find(\".owl-prev\"),\n            $carouselNext = $carousel.find(\".owl-next\");\n        // applying arrows styles\n        $carouselPrev.addClass(\"left carousel-control\").empty().append(\"<i class='arrow-left'></i>\");\n        $carouselNext.addClass(\"right carousel-control\").empty().append(\"<i class='arrow-right'></i>\");\n    }\n\n    // ======================================\n    // Skill bars\n    // ======================================\n    var $skillBars = $(\"#skillbars\"),\n        $skillBar = $skillBars.find(\".skillbar-bar\"),\n        $allSklBrs = $(\".skillbar-bar\");\n\n    function init_skillBars() {\n        if ($skillBars.length) {\n            if ($winWidth >= 768) {\n                $skillBars.waypoint(function() {\n                    $skillBar.each(function() {\n                        var $this = $(this);\n                        $this.width($this.data(\"percent\"));\n                    });\n                }, {\n                    offset: \"60%\"\n                });\n            } else {\n                $allSklBrs.each(function() {\n                    var $this = $(this);\n                    $this.width($this.data(\"percent\"));\n                });\n            }\n        }\n    }\n\n    // ==============================================\n    //     Google Maps\n    // ==============================================\n    //add custom buttons for the zoom-in/zoom-out on the map\n    function CustomZoomControl(controlDiv, map) {\n        //grap the zoom elements from the DOM and insert them in the map \n        var controlUIzoomIn = document.getElementById(\"map-zoom-in\"),\n            controlUIzoomOut = document.getElementById(\"map-zoom-out\");\n        controlDiv.appendChild(controlUIzoomIn);\n        controlDiv.appendChild(controlUIzoomOut);\n        // Setup the click event listeners and zoom-in or out according to the clicked element\n        google.maps.event.addDomListener(controlUIzoomIn, \"click\", function() {\n            map.setZoom(map.getZoom() + 1);\n        });\n        google.maps.event.addDomListener(controlUIzoomOut, \"click\", function() {\n            map.setZoom(map.getZoom() - 1);\n        });\n    }\n\n    function init_map() {\n        if ($(\"#map-section\").length) {\n            // -------------------------------------\n            // map opener\n            // -------------------------------------\n            var $mapOpener = $(\"#map-opener\"),\n                $mapSection = $(\"#map-section\");\n            $mapOpener.on(\"click\", function() {\n                $mapSection.toggleClass(\"map-opened\");\n            });\n            var mapZoom = 14, // mapLatitude = 40.679418,\n                // mapLongitude = -73.886275,\n                //define the basic color of your map, plus a value for saturation and brightness\n                main_color = \"#111518\", // saturation_value = -20,\n                // brightness_value = 5,\n                // // First marker position\n                // markerLatitude = 40.679418,\n                // markerLongitude = -73.886275,\n                // First marker popup structure and content \n                firstContentString = \"<div class='gmap-popup'>\" + \"<h4>\" + \"Our primary office\" + \"</h4>\" + \"<p>\" + \"Your notes sits here!\" + \"</p>\" + \"</div>\";\n            // // Second marker position\n            // secondMarkerLatitude = 40.68000,\n            // secondMarkerLongitude = -73.901525,\n            // // Second marker popup structure and content \n            // secondContentString =\n            // \"<div class='gmap-popup'>\" +\n            // \"<h4>\" +\n            // \"Our secondary office\" +\n            // \"</h4>\" +\n            // \"<p>\" +\n            // \"Your notes sits here!\" +\n            // \"</p>\" +\n            // \"</div>\";\n            // google map custom marker icon - .png fallback for IE11\n            var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;\n            var markerIcon = (is_internetExplorer11) ? 'img/google-map-assets/map-icon-location.png' : 'img/google-map-assets/map-icon-location.svg';\n            // we define here the style of the map\n            var mapStyles = [{\n                \"featureType\": \"landscape\",\n                \"stylers\": [{\n                    \"saturation\": -100\n                }, {\n                    \"lightness\": 65\n                }, {\n                    \"visibility\": \"on\"\n                }]\n            }, {\n                \"featureType\": \"poi\",\n                \"stylers\": [{\n                    \"saturation\": -100\n                }, {\n                    \"lightness\": 51\n                }, {\n                    \"visibility\": \"simplified\"\n                }]\n            }, {\n                \"featureType\": \"road.highway\",\n                \"stylers\": [{\n                    \"saturation\": -100\n                }, {\n                    \"visibility\": \"simplified\"\n                }]\n            }, {\n                \"featureType\": \"road.arterial\",\n                \"stylers\": [{\n                    \"saturation\": -100\n                }, {\n                    \"lightness\": 30\n                }, {\n                    \"visibility\": \"on\"\n                }]\n            }, {\n                \"featureType\": \"road.local\",\n                \"stylers\": [{\n                    \"saturation\": -100\n                }, {\n                    \"lightness\": 40\n                }, {\n                    \"visibility\": \"on\"\n                }]\n            }, {\n                \"featureType\": \"transit\",\n                \"stylers\": [{\n                    \"saturation\": -100\n                }, {\n                    \"visibility\": \"simplified\"\n                }]\n            }, {\n                \"featureType\": \"administrative.province\",\n                \"stylers\": [{\n                    \"visibility\": \"off\"\n                }]\n            }, {\n                \"featureType\": \"water\",\n                \"elementType\": \"labels\",\n                \"stylers\": [{\n                    \"visibility\": \"on\"\n                }, {\n                    \"lightness\": -25\n                }, {\n                    \"saturation\": -100\n                }]\n            }, {\n                \"featureType\": \"water\",\n                \"elementType\": \"geometry\",\n                \"stylers\": [{\n                    \"hue\": main_color\n                }, {\n                    \"lightness\": -25\n                }, {\n                    \"saturation\": -97\n                }]\n            }];\n            // initiate geocider\n            var geocoder = new google.maps.Geocoder();\n            // Address\n            var address = $(\"#map-canvas\").attr(\"data-address\");\n            // var address = document.getElementById('address').value;\n            geocoder.geocode({\n                'address': address\n            }, function(results, status) {\n                if (status == google.maps.GeocoderStatus.OK) {\n                    //set google map options\n                    var mapOptions = {\n                        zoom: mapZoom,\n                        center: results[0].geometry.location,\n                        panControl: false,\n                        zoomControl: false,\n                        mapTypeControl: false,\n                        streetViewControl: false,\n                        mapTypeId: google.maps.MapTypeId.ROADMAP,\n                        scrollwheel: false,\n                        tilt: 45, // Color Styles\n                        styles: mapStyles\n                    };\n                    //inizialize the map\n                    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);\n                    //inizialize the first marker\n                    var marker = new google.maps.Marker({\n                        position: results[0].geometry.location,\n                        map: map,\n                        icon: markerIcon\n                    });\n                    var firstInfowindow = new google.maps.InfoWindow({\n                        content: firstContentString\n                    });\n                    google.maps.event.addListener(marker, \"click\", function() {\n                        firstInfowindow.open(map, marker);\n                    });\n                    var zoomControlDiv = document.createElement(\"div\");\n                    var zoomControl = new CustomZoomControl(zoomControlDiv, map);\n                    //insert the zoom div on the top left of the map\n                    map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);\n                } else {\n                    alert('Geocode was not successful for the following reason: ' + status);\n                }\n            });\n        }\n    }\n\n    // ==============================================\n    //   Animsition | Page loading effects\n    // ==============================================\n    var $animsition = $(\".animsition\");\n    var initAnimation = function() {\n        $(\".init-animation-1\").addClass(\"fadeInDown\").css(\"opacity\", 1);\n        $(\".init-animation-2\").addClass(\"fadeInUp\").css(\"opacity\", 1);\n        $(\".init-animation-3\").addClass(\"fadeInRight\").css(\"opacity\", 1);\n        $(\".init-animation-4\").addClass(\"fadeInLeft\").css(\"opacity\", 1);\n        $(\".init-animation-5\").addClass(\"fadeIn\").css(\"opacity\", 1);\n    };\n\n    function init_animsition() {\n        if ($animsition.length) {\n            $animsition.animsition({\n                // inClass               :   'fade-in',\n                // outClass              :   'fade-out',\n                inDuration: 1200,\n                outDuration: 800,\n                linkElement: '.animsition-link', // e.g. linkElement   :   'a:not([target=\"_blank\"]):not([href^=#])'\n                loading: true,\n                loadingParentElement: 'body', //animsition wrapper element\n                loadingClass: 'animsition-loading',\n                unSupportCss: ['animation-duration', '-webkit-animation-duration', '-o-animation-duration'], //\"unSupportCss\" option allows you to disable the \"animsition\" in case the css property in the array is not supported by your browser.\n                //The default setting is to disable the \"animsition\" in a browser that does not support \"animation-duration\".\n                overlay: false,\n                overlayClass: 'animsition-overlay-slide',\n                overlayParentElement: 'body'\n            }).one('animsition.start', function() {\n                setTimeout(initAnimation, 800);\n            }).one('animsition.end', function() {\n                init_skillBars();\n                init_skrollr();\n            });\n        }\n    }\n\n    // ======================================\n    //         Skrollr\n    // ======================================\n    function init_skrollr() {\n        if (!isMobile) {\n            // Init Skrollr\n            var s = skrollr.init({\n                forceHeight: false,\n                smoothScrolling: false\n            });\n        }\n    }\n\n\n    /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n\n      =======      Below are functions that are dedicated only for large devices     ========\n\n      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/\n    if (!isMobile && screen.width >= 768) {\n\n        // ==============================================\n        //    WOW | Animation on scroll\n        // ==============================================\n        var wow = new WOW({\n                boxClass: 'wow', // animated element css class (default is wow)\n                animateClass: 'animated', // animation css class (default is animated)\n                offset: 0, // distance to the element when triggering the animation (default is 0)\n                mobile: false, // trigger animations on mobile devices (default is true)\n                live: true // act on asynchronously loaded content (default is true)\n            }),\n\n            // ==============================================\n            //     Ripple effect\n            // ==============================================\n            //Ripple effect for group buttons and menues\n            elem, ink, d, x, y, $rippleGroup = $(\".ripple-group\"),\n            $rippleAlone = $(\".ripple-alone\"),\n            init_ripple = function() {\n                $rippleGroup.on(\"click\", function(e) {\n                    parent = $(this).parents(\".ripple-group-parent\");\n                    //create .ink element if it doesn't exist\n                    if (parent.find(\".ink\").length === 0) {\n                        parent.append(\"<span class='ink'></span>\");\n                    }\n                    ink = parent.find(\".ink\");\n                    //incase of quick double clicks stop the previous animation\n                    ink.removeClass(\"animate\");\n                    //set size of .ink\n                    if (!ink.height() && !ink.width()) {\n                        //use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.\n                        d = Math.max(parent.outerWidth(), parent.outerHeight());\n                        ink.css({\n                            height: d,\n                            width: d\n                        });\n                    }\n                    //get click coordinates\n                    //logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;\n                    x = e.pageX - parent.offset().left - ink.width() / 2;\n                    y = e.pageY - parent.offset().top - ink.height() / 2;\n                    //set the position and add class .animate\n                    ink.css({\n                        top: y + 'px',\n                        left: x + 'px'\n                    }).addClass(\"animate\");\n                });\n                //Ripple effect for single elements\n                $rippleAlone.on(\"click\", function(e) {\n                    elem = $(this);\n                    //create .ink element if it doesn't exist\n                    if (elem.find(\".ink\").length === 0) {\n                        elem.append(\"<span class='ink'></span>\");\n                    }\n                    ink = elem.find(\".ink\");\n                    //incase of quick double clicks stop the previous animation\n                    ink.removeClass(\"animate\");\n                    //set size of .ink\n                    if (!ink.height() && !ink.width()) {\n                        //use elem's width or height whichever is larger for the diameter to make a circle which can cover the entire element.\n                        d = Math.max(elem.outerWidth(), elem.outerHeight());\n                        ink.css({\n                            height: d,\n                            width: d\n                        });\n                    }\n                    //get click coordinates\n                    //logic = click coordinates relative to page - elem's position relative to page - half of self height/width to make it controllable from the center;\n                    x = e.pageX - elem.offset().left - ink.width() / 2;\n                    y = e.pageY - elem.offset().top - ink.height() / 2;\n                    //set the position and add class .animate\n                    ink.css({\n                        top: y + 'px',\n                        left: x + 'px'\n                    }).addClass(\"animate\");\n                });\n            },\n\n            // ======================================\n            // Smooth scrolling for in page links\n            // ======================================\n            $root = $(\"html, body\"),\n            $smoothScrollAnchor = $(\".in-page-scroll\").find(\"a[href*=#]\"),\n            init_inpage_scroll = function() {\n                $smoothScrollAnchor.on(\"click\", function(event) {\n                    $root.animate({\n                        scrollTop: $($.attr(this, \"href\")).offset().top\n                    }, 800, \"easeInCubic\");\n                    event.preventDefault();\n                });\n            },\n\n            // ==============================================\n            //     Page scroll progress bar\n            // ==============================================\n            $scrollProgressBar = $(\"#scroll-progressbar\").find(\"div\"),\n            init_page_scrollBar = function() {\n                $window.scroll(function() {\n                    var value = $(document).scrollTop(),\n                        max = $(document).height() - $window.height();\n                    $scrollProgressBar.width((value / max) * 100 + \"%\");\n                });\n            },\n\n            // ==============================================\n            //     Blur on scroll header\n            // ==============================================\n            $blur = $(\"#blur\"),\n            init_blurScrl = function() {\n                if ($blur.length) {\n                    var blH = $blur.height(),\n                        blHS = blH + 1,\n                        blurVal = $blur.attr(\"data-blur\");\n                    var attrs = {};\n                    attrs['data-top'] = 'filter: blur(0px); translate3d(0px,0px,0px);';\n                    attrs['data--' + blH + '-top'] = 'filter: blur(' + blurVal + ' ); translate3d(0px,0px,0px);';\n                    attrs['data--' + blHS + '-top'] = 'filter: blur(0px); translate3d(0px,0px,1px);';\n                    $blur.attr(attrs);\n                }\n            },\n\n            // ======================================\n            // Sticky Particles\n            // ======================================\n            init_particlesB = function() {\n                if ($(\"#particles-js\").length) {\n                    particlesJS('particles-js', {\n                        \"particles\": {\n                            \"number\": {\n                                \"value\": 110,\n                                \"density\": {\n                                    \"enable\": true,\n                                    \"value_area\": 800\n                                }\n                            },\n                            \"color\": {\n                                \"value\": \"#ffffff\"\n                            },\n                            \"shape\": {\n                                \"type\": \"circle\",\n                                \"stroke\": {\n                                    \"width\": 0,\n                                    \"color\": \"#ffffff\"\n                                },\n                                \"polygon\": {\n                                    \"nb_sides\": 5\n                                },\n                                \"image\": {\n                                    \"src\": \"img/github.svg\",\n                                    \"width\": 100,\n                                    \"height\": 100\n                                }\n                            },\n                            \"opacity\": {\n                                \"value\": 0.6000850120433731,\n                                \"random\": true,\n                                \"anim\": {\n                                    \"enable\": false,\n                                    \"speed\": 1,\n                                    \"opacity_min\": 0.1,\n                                    \"sync\": false\n                                }\n                            },\n                            \"size\": {\n                                \"value\": 1,\n                                \"random\": true\n                            },\n                            \"line_linked\": {\n                                \"enable\": true,\n                                \"distance\": 220,\n                                \"color\": \"#ffffff\",\n                                \"opacity\": 0.4,\n                                \"width\": 1\n                            },\n                            \"move\": {\n                                \"enable\": true,\n                                \"speed\": 8,\n                                \"direction\": \"none\",\n                                \"random\": true,\n                                \"straight\": false,\n                                \"out_mode\": \"out\",\n                                \"bounce\": false,\n                                \"attract\": {\n                                    \"enable\": false,\n                                    \"rotateX\": 600,\n                                    \"rotateY\": 1200\n                                }\n                            }\n                        },\n                        \"interactivity\": {\n                            \"detect_on\": \"canvas\",\n                            \"events\": {\n                                \"onhover\": {\n                                    \"enable\": true,\n                                    \"mode\": \"grab\"\n                                },\n                                \"onclick\": {\n                                    \"enable\": true,\n                                    \"mode\": \"repulse\"\n                                },\n                                \"resize\": true\n                            },\n                            \"modes\": {\n                                \"grab\": {\n                                    \"distance\": 260,\n                                    \"line_linked\": {\n                                        \"opacity\": 1\n                                    }\n                                },\n                                \"bubble\": {\n                                    \"distance\": 400,\n                                    \"size\": 40,\n                                    \"duration\": 2,\n                                    \"opacity\": 8,\n                                    \"speed\": 3\n                                },\n                                \"repulse\": {\n                                    \"distance\": 180,\n                                    \"duration\": 0.4\n                                },\n                                \"push\": {\n                                    \"particles_nb\": 4\n                                },\n                                \"remove\": {\n                                    \"particles_nb\": 2\n                                }\n                            }\n                        },\n                        \"retina_detect\": true\n                    });\n                }\n            },\n            // ======================================\n            // Number Counter\n            // ======================================\n            $counter = $('.counter'),\n            init_numberCounter = function() {\n                if ($counter.length) {\n                    $counter.counterUp({\n                        delay: 10,\n                        time: 800\n                    });\n                }\n            },\n\n            // ======================================\n            //  Team Item skill Bars\n            // ======================================\n            $teamItem = $(\"#team-section\").find(\".team-item\"),\n            init_team_skillBars = function() {\n                $teamItem.mouseenter(function() {\n                    $(this).find(\".skillbar-bar\").each(function() {\n                        var $this = $(this);\n                        $this.width($this.attr(\"data-percent\"));\n                    });\n                }).mouseleave(function() {\n                    $teamItem.find(\".skillbar-bar\").width(0);\n                });\n            },\n\n            // ======================================\n            //   Go top button pop-up\n            // ======================================\n            $goTop = $(\"#go-top\"),\n            init_gotop_pop = function() {\n                $window.scroll(function() {\n                    if ($window.scrollTop() + $window.height() > $(document).height() - 200) {\n                        $goTop.addClass(\"go-top-out\");\n                    } else {\n                        $goTop.removeClass(\"go-top-out\");\n                    }\n                });\n            },\n\n            // ======================================\n            //   sticky sidebar\n            // ======================================\n            // \n            init_sticy_sidebar = function() {\n                var sidebar = $('#sidebar');\n                if (sidebar.length) {\n                    var top = sidebar.offset().top - parseFloat(sidebar.css('margin-top').replace(/auto/, 0)),\n                        height = sidebar.height(),\n                        winHeight = $(window).height(),\n                        winWidth = $(window).width(),\n                        containerWidth = $(\".container\").width(),\n                        right = (winWidth - containerWidth) / 2,\n                        stopStick = $('#end-content').offset().top - parseFloat($('#end-content').css('margin-top').replace(/auto/, 0)) - 180,\n                        gap = 30;\n                    if (sidebar.hasClass('col-sm-3')) {\n                        sidebar.outerWidth(containerWidth / 4);\n                    } else if (sidebar.hasClass('col-sm-4')) {\n                        sidebar.outerWidth(containerWidth / 3);\n                    }\n                    $(window).scroll(function() {\n                        // what the y position of the scroll is\n                        var y = $(this).scrollTop();\n                        // whether that's below the form\n                        if (y + winHeight >= top + height + gap && y + winHeight <= stopStick) {\n                            // if so, ad the fixed class\n                            sidebar.addClass('sidebarfixed').css({\n                                'top': winHeight - height - gap + 'px',\n                                \"right\": right + (15 / 2)\n                            });\n                        } else if (y + winHeight > stopStick) {\n                            // if so, ad the fixed class\n                            sidebar.addClass('sidebarfixed').css({\n                                'top': stopStick - height - y - gap + 'px',\n                                \"right\": right + (15 / 2)\n                            });\n                        } else {\n                            // otherwise remove it\n                            sidebar.removeClass('sidebarfixed').css({\n                                'top': '0px',\n                                \"right\": 15\n                            });\n                        }\n                    });\n                }\n            };\n\n        if(isMobile) {\n            $(\".navbar-nav li a\").click(function(event) {\n                $(\".navbar-collapse\").collapse('hide');\n\n            }); \n        }\n        \n\n\n        // ======================================\n        // Refreshing Nav Status On Scroll\n        // ======================================\n        $root.each(function() {\n            var $spy = $(this).scrollspy('refresh');\n        });\n\n        // init function on large devices\n        init_page_scrollBar();\n        init_ripple();\n        init_gotop_pop();\n        init_animate_navIcon();\n        init_transparent_nav();\n        init_sticky_nav();\n        init_sticky_portfolio_nav();\n        init_sticy_sidebar();\n        wow.init();\n        init_particlesB();\n        init_team_skillBars();\n        init_numberCounter();\n        init_animateslider();\n        init_YTPlayer();\n        init_particlesA();\n        init_lightbox();\n        init_owl_sliders();\n        init_isotope();\n        init_inpage_scroll();\n        init_process_slider();\n        init_blurScrl();\n        init_animsition();\n        if (!$page.hasClass(\"animsition\")) {\n            init_skillBars();\n            init_skrollr();\n        }\n        if (!isMobile) {\n            // set the timer\n            var timer;\n            $window.resize(function() {\n                init_sticy_sidebar();\n                clearTimeout(timer);\n                timer = setTimeout(function() {\n                    // Preparing the skrollr to be triggered on resize\n                    var s = skrollr.init({\n                        forceHeight: false,\n                        smoothScrolling: false\n                    }).refresh();\n                    init_blurScrl();\n                }, 1200);\n            });\n        }\n        init_map();\n    } else {\n\n        // init function on small devices\n        init_transparent_nav();\n        init_sticky_nav();\n        init_sticky_portfolio_nav();\n        init_animateslider();\n        init_YTPlayer();\n        init_particlesA();\n        init_lightbox();\n        init_autoclose_navbar();\n        init_animate_navIcon();\n        init_owl_sliders();\n        if (!$page.hasClass(\"animsition\")) {\n            init_skillBars();\n        }\n        init_isotope();\n        init_process_slider();\n        init_animsition();\n        init_map();\n    }\n    $('.svg-container').addClass('animate-svg');\n})(jQuery);\n\n\n",
+			"file": "js/scripts.js",
+			"file_size": 48762,
+			"file_write_time": 130837100480000000,
+			"settings":
+			{
+				"buffer_size": 46813,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Mojo/Code/VolarTemplate",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/css",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/img",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/img/portfolio",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/img/portfolio/work01"
+	],
+	"file_history":
+	[
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/css/styles.css",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/js/portfolio.js",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/js/scripts.js",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/index14(2).html",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/mailer.php",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/css/theme/theme.css",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/js/smoothscroll.js",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/js/skrollr.min.js",
+		"/Users/Mojo/Downloads/less-styles/styles/theme.less",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/css/theme/orange.css",
+		"/Users/Mojo/Code/VolarTemplate/Fonts/custom-icons/demo.html",
+		"/Users/Mojo/Code/VolarTemplate/Fonts/custom-icons/demo-files/demo.css",
+		"/Users/Mojo/Code/VolarTemplate/Fonts/custom-icons/demo-files/demo.js",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/css/bootstrap.min.css",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/favicon-16x16.png",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/favicon-32x32.png",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/favicon.ico",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/index07.html",
+		"/Users/Mojo/Downloads/PaperThisAndThat-pencil-1.svg",
+		"/Users/Mojo/Google Drive/Portfolio/fist.svg",
+		"/Users/Mojo/Google Drive/Portfolio/RH_fist_outline.svg",
+		"/Users/Mojo/Downloads/google-glasses (1)/svg/bald35.svg",
+		"/Users/Mojo/Downloads/google-glasses (1)/flaticon.svg",
+		"/Users/Mojo/Downloads/google-glasses/svg/google97.svg",
+		"/Users/Mojo/Downloads/google-glasses/svg/young16.svg",
+		"/Users/Mojo/Code/joeabhishek.github.io/css/flexslider.css",
+		"/Users/Mojo/Code/joeabhishek.github.io/css/bootstrap.min.css",
+		"/Users/Mojo/Code/joeabhishek.github.io/css/color.css",
+		"/Users/Mojo/Code/joeabhishek.github.io/css/animate.css",
+		"/Users/Mojo/Code/joeabhishek.github.io/css/portfolio.css",
+		"/Users/Mojo/Code/joeabhishek.github.io/css/mtrack.css",
+		"/Users/Mojo/Code/joeabhishek.github.io/css/style.css",
+		"/Users/Mojo/Code/joeabhishek.github.io/index.html",
+		"/Users/Mojo/Code/joeabhishek.github.io/fcext.html",
+		"/Users/Mojo/Code/joeabhishek.github.io/shopping.html",
+		"/Users/Mojo/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Mojo/Code/joeabhishek.github.io/img/shopling_home.png",
+		"/Users/Mojo/Downloads/RibbitDesign/src/com/teamtreehouse/ribbit/adapters/UserAdapter.java",
+		"/Users/Mojo/Downloads/graduation43.svg",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/notify/handler.py",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/lib/oauth2client/util.py",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/lib/uritemplate/__init__.py",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/main_handler.py",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/templates/index.html",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/main.py",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/app.yaml",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/client_secrets.json",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/static/images/art_clear.png",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/static/images/art_clouds.png",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/static/images/art_fog.png",
+		"/Users/Mojo/Downloads/favicon.ico",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/README.md",
+		"/Users/Mojo/Code/mirror-quickstart-python-master/model.py",
+		"/Users/Mojo/Code/HelloGlass/README.md",
+		"/Applications/XAMPP/xamppfiles/phpmyadmin/js/jqplot/jquery.jqplot.js",
+		"/Applications/XAMPP/xamppfiles/lib/php/HTML/Select/Common/FRDepartements.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mobile",
+			"src",
+			"work",
+			"colored-mask",
+			"asd",
+			"svg",
+			"location.hash",
+			"work01-bg",
+			"ink",
+			"in-page-scroll",
+			"ripple",
+			"wow",
+			"fa",
+			">\n",
+			"path",
+			"animsition",
+			"init-animation",
+			"2",
+			"isMobile",
+			" $animatedNavicon",
+			"mobile",
+			"heading",
+			"path-1",
+			"mask",
+			"mask-2",
+			"team",
+			"blog",
+			"var $spy = $(this).scrollspy('refresh');",
+			"cl-effect-5",
+			"portfolio",
+			"portofolio",
+			"767",
+			"min-width",
+			"max-width",
+			".active",
+			"navbar-nav",
+			".navbar-default .navbar-nav > li > a",
+			".home-section.overlay:before, .home-section .overlay:before",
+			"ffffff",
+			"00000",
+			"href",
+			".navbar-nav",
+			"@media(max-width: 991px)",
+			"@media (max-width: 991px) and (min-width: 768px)",
+			"margin",
+			"992",
+			"768",
+			"MIN-WIDTH: 9",
+			"navbar-collap",
+			"navbar-nav",
+			"navbar-right",
+			"ripple-group",
+			"<!-- Main Styles -->\n    <link href=\"css/styles.css\" rel=\"stylesheet\">",
+			"Believe",
+			"believe",
+			"thumb",
+			"project",
+			"attachment-project",
+			"mtrack",
+			"service",
+			"contact",
+			"favicon.ico",
+			"favicon"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "glass_companion.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9252,
+								9252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 49105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1038,
+								1038
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "project_page_old",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3130,
+								3130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 845.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/theme/theme.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6419.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1517,
+								1517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1028.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								500,
+								500
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/contactForm.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46812,
+								46812
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 17892.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "Portfolio.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
