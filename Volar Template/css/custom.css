@@ -233,7 +233,11 @@
 
 .project-desc p, li{
 	font-weight: 500;
-	font-size: 
+	line-height: 3rem;
+}
+
+.project-section {
+	margin-top: 5rem;
 }
 
 .project-desc .image-margins{
@@ -246,7 +250,7 @@
 }
 
 .sidebar-section-first-item {
-	margin-top: 5rem !important;
+	margin-top: 5.8rem !important;
 }
 
 .sidebar-section p{
@@ -274,6 +278,109 @@
 	font-weight: 500;
 	border-bottom: #ff4c05 0px solid;
 }
+
+.image-gallery {
+	height: 400px;
+	vertical-align: middle;
+	position: relative;
+}
+
+.image-gallery img {
+	position: relative;
+	max-width: 100%;
+	max-height: 400px;
+	vertical-align: middle;
+}
+
+.gallery-action-icon-left{
+	position: absolute;
+	height: 400px;
+	width: 5rem;
+	left:0px;
+	top:0px;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 3rem;
+	text-align: center;
+}
+
+.gallery-action-icon-right{
+	position: absolute;
+	height: 400px;
+	width: 5rem;
+	right:0px;
+	top:0px;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 3rem;
+	text-align: center;
+}
+
+.gallery-action-icon {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:190px;
+	bottom: 0;
+	margin: auto;
+	color: white;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.gallery-img {
+	background-size: contain;
+	height: 400px;
+	background-repeat-x: no-repeat;
+	background-position: center;
+}
+
+.thumbnail-gallery {
+	margin-top: 1rem;
+	height:100px;
+	text-align: center
+}
+
+.image-gallery-thumbnail {
+	display: inline-block;
+	width: 100px;
+	height: 100%;
+	background-size: cover;
+}
+
+
+.overlay {
+  position: relative;
+  background-size: cover;
+}
+
+.overlay:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:.4;
+  background-color: black;
+}
+
+.overlay:hover:after  {
+  opacity: 0;
+}
+
+.intro-points {
+	line-height: 3em;
+	font-weight: 500;
+}
+
+.intro-points i{
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+
 
 
 
