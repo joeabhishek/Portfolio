@@ -4,6 +4,110 @@
 		"selected_items":
 		[
 			[
+				"r",
+				"rgba()"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"maxPosition"
+			],
+			[
+				"gall",
+				"galleryID"
+			],
+			[
+				"gal",
+				"galleryID"
+			],
+			[
+				"thum",
+				"thumbState"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"thu",
+				"thumbnail"
+			],
+			[
+				"t",
+				"thumbnail"
+			],
+			[
+				"aci",
+				"activeImgID"
+			],
+			[
+				"g",
+				"gNum"
+			],
+			[
+				"add",
+				"addOverlayToThumbnail"
+			],
+			[
+				"ad",
+				"addOverlayToThumbnail"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"img",
+				"imgEle"
+			],
+			[
+				"im",
+				"imageUrl"
+			],
+			[
+				"backroud",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
 				"font",
 				"font-size"
 			],
@@ -12,20 +116,8 @@
 				"margin-bottom"
 			],
 			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
 				"pad",
 				"padding-bottom"
-			],
-			[
-				"tex",
-				"text-decoration"
 			],
 			[
 				"padd",
@@ -44,10 +136,6 @@
 				"background-color"
 			],
 			[
-				"fon",
-				"font-weight"
-			],
-			[
 				"d",
 				"div	Tag"
 			],
@@ -64,16 +152,8 @@
 				"animatedNavicon"
 			],
 			[
-				"ma",
-				"max-width"
-			],
-			[
 				"min",
 				"min-width"
-			],
-			[
-				"max",
-				"max-width"
 			],
 			[
 				"in",
@@ -88,10 +168,34 @@
 	"buffers":
 	[
 		{
+			"file": "js/portfolio.js",
+			"settings":
+			{
+				"buffer_size": 2828,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shopster.html",
+			"settings":
+			{
+				"buffer_size": 34579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/custom.css",
+			"settings":
+			{
+				"buffer_size": 6367,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "glass_companion.html",
 			"settings":
 			{
-				"buffer_size": 22032,
+				"buffer_size": 23309,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,7 +203,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 49105,
+				"buffer_size": 49091,
 				"line_ending": "Windows"
 			}
 		},
@@ -116,14 +220,6 @@
 			"settings":
 			{
 				"buffer_size": 34977,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/custom.css",
-			"settings":
-			{
-				"buffer_size": 4200,
 				"line_ending": "Unix"
 			}
 		},
@@ -187,15 +283,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Mojo/Code/VolarTemplate",
-		"/Users/Mojo/Code/VolarTemplate/Volar Template",
-		"/Users/Mojo/Code/VolarTemplate/Volar Template/css",
-		"/Users/Mojo/Code/VolarTemplate/Volar Template/img",
-		"/Users/Mojo/Code/VolarTemplate/Volar Template/img/portfolio",
-		"/Users/Mojo/Code/VolarTemplate/Volar Template/img/portfolio/work01"
 	],
 	"file_history":
 	[
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/css/custom.css",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/index.html",
+		"/Users/Mojo/Code/VolarTemplate/Volar Template/glass_companion.html",
 		"/Users/Mojo/Code/VolarTemplate/Volar Template/css/styles.css",
 		"/Users/Mojo/Code/VolarTemplate/Volar Template/js/portfolio.js",
 		"/Users/Mojo/Code/VolarTemplate/Volar Template/js/scripts.js",
@@ -270,6 +363,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gNum",
+			"debugger",
 			"mobile",
 			"src",
 			"work",
@@ -350,71 +445,163 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "glass_companion.html",
+					"file": "js/portfolio.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22032,
+						"buffer_size": 2828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9252,
-								9252
+								1781,
+								1781
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2840.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 49105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1038,
-								1038
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 8336.0,
+						"translation.y": 147.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
+					"buffer": 1,
+					"file": "shopster.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 34579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23674,
+								23674
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3646.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"file": "img/portfolio/shopster/vision-1.jpg",
+					"semi_transient": false,
+					"stack_index": 3,
+					"type": "image"
+				},
+				{
 					"buffer": 2,
+					"file": "css/custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4940,
+								4940
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4473.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "glass_companion.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10317,
+								10317
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 49091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19185,
+								19185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "project_page_old",
 					"semi_transient": false,
 					"settings":
@@ -440,11 +627,11 @@
 						"translation.y": 845.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "css/theme/theme.css",
 					"semi_transient": false,
 					"settings":
@@ -467,43 +654,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6419.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "css/custom.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1517,
-								1517
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1028.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "css/styles.css",
 					"semi_transient": false,
 					"settings":
@@ -529,11 +687,11 @@
 						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "js/contactForm.js",
 					"semi_transient": false,
 					"settings":
@@ -559,11 +717,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "js/scripts.js",
 					"semi_transient": false,
 					"settings":
@@ -589,7 +747,7 @@
 						"translation.y": 17892.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -676,7 +834,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 220.0,
+	"side_bar_width": 292.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

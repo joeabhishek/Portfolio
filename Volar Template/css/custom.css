@@ -150,7 +150,7 @@
 }
 
 .resume-card {
-	height:420px;
+	height:450px;
 }
 
 .resume-card-icon {
@@ -245,6 +245,11 @@
 	margin-bottom: 3rem;
 }
 
+.secondary-heading {
+	font-weight: 500;
+	font-size: 2rem;
+}
+
 .sidebar-section {
 	margin-top: 3rem;
 }
@@ -288,6 +293,13 @@
 	font-size: 2rem;
 	margin-right: 1rem;
 	color: #ff4c05;
+}
+
+.intro-points span{
+	font-size: 2rem;
+	margin-right: 1rem;
+	color: #ff4c05;
+	font-weight: 300;
 }
 
 /* Image Gallery */
