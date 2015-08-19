@@ -332,7 +332,7 @@ body ::selection {
 }
 .btn-contact {
   color: #ffffff;
-  background: #171724;
+  background: #0c0c17;
 }
 .btn-contact::before,
 .btn-contact::after {

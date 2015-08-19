@@ -1245,12 +1245,15 @@ small,
     padding-bottom: 90px;
   }
 }
-@media (min-width: 1200px) {
+
+/* Edited */
+/*@media (min-width: 1200px) {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 }
+*/
 .small-section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -2843,9 +2846,9 @@ body {
   text-align: center;
   margin-right: -1px;
 }
-.portfolio-item-img {
+/*.portfolio-item-img {
   overflow: hidden;
-}
+}*/
 .portfolio-item-img img {
   width: 100%;
   height: auto;
@@ -5664,7 +5667,7 @@ li.comment-item {
   padding-right: 0;
 }
 .no-padding-bottom {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 .padding-5 {
   padding: 5px;
