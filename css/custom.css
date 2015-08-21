@@ -182,7 +182,7 @@
 .page-down-2 {
 	position: absolute;
 	left: 48%;
-	bottom: 1rem;
+	bottom: 3rem;
 	z-index: 1000;
 	text-align: center;
 	margin:0 auto;
@@ -191,11 +191,11 @@
 	font-weight: 300;	
 }
 
-#chev-down:visited  {
+.chev-down:visited  {
 	color: #ff4c05;
 }
 
-#chev-down:hover {
+.chev-down:hover {
 	color: #D63E02;
 }
 
@@ -399,7 +399,7 @@
 	top:190px;
 	bottom: 0;
 	margin: auto;
-	color: #ff4c05;
+	color: #0c0c17;
 }
 
 .gallery-img {
