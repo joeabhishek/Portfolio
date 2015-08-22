@@ -205,6 +205,10 @@
 	color: #0c0c17;
 }
 
+.home-social-icons a:hover{
+	color: #ff4c05;
+}
+
 .links{
 	line-height: 2;
 	text-decoration: none;
