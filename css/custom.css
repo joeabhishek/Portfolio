@@ -199,6 +199,12 @@
 	color: #D63E02;
 }
 
+.home-social-icons a{
+	margin: 2rem;
+	font-size: 3rem;
+	color: #0c0c17;
+}
+
 .links{
 	line-height: 2;
 	text-decoration: none;
@@ -209,7 +215,7 @@
 
 .links:hover{
 	background-color:#ff4c05;
-	color: white;
+	color: #fff !important;
 	font-weight: 500;
 	border-bottom: #ff4c05 0px solid;
 }
@@ -250,6 +256,8 @@
   box-shadow: 0 0 6px 4px #f5f5fa;
 }
 
+
+
 @media (min-width: 1200px) {
   .section {
     padding-top: 100px;
@@ -266,6 +274,13 @@
 	max-width: 100%;
 	height: auto;
 	padding-bottom: 5rem;
+}
+
+.project-intro-img {
+	display: block;
+	max-width: 80%;
+	height: auto;
+
 }
 
 .project-desc p, li{
@@ -408,6 +423,11 @@
 	background-repeat-x: no-repeat;
 	background-repeat-y: no-repeat;
 	background-position: center;
+}
+
+.gallery-img-2 {
+	width: 80%;
+	margin: auto;
 }
 
 .thumbnail-gallery {
