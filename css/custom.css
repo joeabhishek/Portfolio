@@ -101,6 +101,14 @@
 	.mobile-hide {
 		display: none;
 	}
+
+	.image-gallery{
+		margin-bottom: 15rem;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
 }
 
 .navbar-collapse {
@@ -178,6 +186,8 @@
 	display: inline-block;
 	font-weight: 300;	
 }
+
+
 
 .page-down-2 {
 	position: absolute;
@@ -379,6 +389,7 @@
     -ms-user-select: none;
     user-select: none;
 }
+
 
 .image-gallery img {
 	position: relative;
