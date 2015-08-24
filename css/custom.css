@@ -78,11 +78,21 @@
 		padding-left: 10rem;
 	}
 
+	.back-nav-button {
+		/*display: none;*/
+	}
+
 }
 
 .navbar-header {
 	position: relative;
     margin-top: 30px;
+}
+
+/* From Styles.css */
+.pricing-body {
+  /*overflow-x: auto;*/
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 767px) {
@@ -98,16 +108,41 @@
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
-	.mobile-hide {
-		display: none;
-	}
 
 	.image-gallery{
 		margin-bottom: 15rem;
 	}
 
 	.mobile-hide {
-		display: none;
+		display: none !important;
+	}
+
+	.pricing-body {
+		width: 100%;
+		overflow-x: none !important; 
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.pricing-features {
+		width:100%;
+		padding-left: 0px;
+	}
+
+	.pricing-header {
+		height: 70px;
+	}
+
+	.pricing-header h3 {
+		margin-top: 1rem;
+	}
+
+	.resume-card {
+		height: auto !important;
+	}
+
+	.back-nav-button {
+		display: block;
 	}
 }
 

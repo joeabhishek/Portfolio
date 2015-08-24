@@ -3401,10 +3401,10 @@ body {
   content: '/';
   margin-right: 2px;
 }
-.pricing-body {
+/*.pricing-body {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-}
+}*/
 .pricing-features {
   width: 700px;
   margin-bottom: 0;
