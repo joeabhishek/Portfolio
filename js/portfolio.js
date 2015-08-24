@@ -1,8 +1,10 @@
 (function($) {
+
 	var position = 1;
 	var thumbnail = thumbnail = $(".thumbnail-gallery").find("[data-position='" + position + "']");
 	var maxPosition = thumbnail.data("max-position");
 	var imageUrl = "";
+	var imageUrl2 = "";
 	var thumbState = {
 		'g1': 1,
 		'g2': 1,
@@ -17,13 +19,16 @@
 	var changeActiveImage = function($gallery, $thumbnail){
 		var $activeImg =  $('#gallery-active-img' + $gallery.attr('id').substr(1,1)); 
 		$thumbnail.removeClass("overlay");
+		$thumbnail.children('.lightbox-img-link').data('lightbox-gallery', '');
 		imageUrl = $thumbnail.css("background-image");
 		$activeImg.css("background-image", imageUrl);
+		// The following line is to obtain background image url from the css attribute
+		$activeImg.parent().attr("href", imageUrl.replace('url(','').replace(')',''));
 	}
 	var addOverlayToThumbnail = function($gallery, galleryID) {
 		var thumbnail = $gallery.find("[data-position='" + thumbState[galleryID] + "']");
 		thumbnail.addClass("overlay");
-		return thumbnail;
+		thumbnail.children('.lightbox-img-link').data('lightbox-gallery', galleryID);
 	}
 
 	$('.image-gallery-thumbnail').click(function(e){
@@ -80,4 +85,6 @@
 		}
 		e.preventDefault();	
 	});
+
+	$('.light-box').nivoLightbox();
 })(jQuery);

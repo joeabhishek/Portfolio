@@ -361,6 +361,11 @@
 .intro-points {
 	line-height: 3em;
 	font-weight: 500;
+	margin-top: 1rem;
+}
+
+.intro-points li {
+	margin-bottom: 1rem;
 }
 
 .intro-points i{
@@ -370,13 +375,14 @@
 }
 
 .intro-points span{
-	font-size: 2rem;
-	margin-right: 1rem;
-	color: #ff4c05;
-	font-weight: 300;
+	position: relative;
+	left:1rem;
 }
 
 /* Image Gallery */
+.lightbox-img-link {
+   display: none;
+}
 
 .image-gallery {
 	height: auto;
