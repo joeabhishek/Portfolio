@@ -4,6 +4,22 @@
   opacity: 1;
 }
 
+b {
+	font-weight: 700;
+	color: rgba(65,65,65,1);
+}
+
+.hs-text-6 {
+  position: relative;
+  margin-top: 0;
+  font-size: 24px;
+  letter-spacing: .35em;
+  margin-right: -0.35em;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .work01-bg {
   /*background-image: url(../img/backgrounds/work01-section-bg.jpg);*/
   /*background-size: 100% auto;*/
@@ -143,6 +159,10 @@
 
 	.back-nav-button {
 		display: block;
+	}
+
+	.page-down-1 {
+		left: 45% !important;
 	}
 }
 
@@ -327,10 +347,7 @@
 	margin-top: 1rem;
 }
 
-b {
-	font-weight: 700;
-	color: rgba(65,65,65,1);
-}
+
 
 .emphasis {
 	font-weight: 700;
