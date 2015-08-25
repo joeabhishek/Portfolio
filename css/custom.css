@@ -247,7 +247,7 @@
 .home-social-icons a{
 	margin: 2rem;
 	font-size: 3rem;
-	color: #0c0c17;
+	color: rgba(65,65,65,1);
 }
 
 .home-social-icons a:hover{
@@ -317,6 +317,25 @@
 
 
 /* portfolio project page*/
+
+.sub-heading {
+	font-weight: 700;
+	color: rgba(65,65,65,1);
+}
+
+.margin-top {
+	margin-top: 1rem;
+}
+
+b {
+	font-weight: 700;
+	color: rgba(65,65,65,1);
+}
+
+.emphasis {
+	font-weight: 700;
+	color: rgba(65,65,65,1);
+}
 
 .project-header-image {
 	margin-top: 10rem;
@@ -412,6 +431,11 @@
 .intro-points span{
 	position: relative;
 	left:1rem;
+}
+
+.intro-points .li-icon{
+	left: 0rem;
+	color: #ff4c05;
 }
 
 /* Image Gallery */
