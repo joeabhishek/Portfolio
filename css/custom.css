@@ -525,6 +525,8 @@ b {
 .gallery-img-2 {
 	width: 80%;
 	margin: auto;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
 }
 
 .thumbnail-gallery {
