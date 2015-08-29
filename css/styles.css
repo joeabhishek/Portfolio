@@ -6527,9 +6527,10 @@ max-width: 767px
   .navbar-nav {
     overflow: hidden;
   }
-  .navbar-nav > li > a {
+  /* In custom.css */
+  /*.navbar-nav > li > a {
     line-height: 21px;
-  }
+  }*/
   .navbar-nav > li > a:hover,
   .navbar-nav > li > a:focus {
     background-image: none;
