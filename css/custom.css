@@ -99,9 +99,7 @@ b {
 	}
 
 	.back-nav-button {
-		display: block;
-		font-size: 3rem;
-    	margin-left: 1rem;
+		display: none;
 	}
 
 }
