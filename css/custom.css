@@ -9,6 +9,10 @@ b {
 	color: rgba(65,65,65,1);
 }
 
+.margin-bottom-0 {
+	margin-bottom: 0px;
+}
+
 .hs-text-6 {
   position: relative;
   margin-top: 0;
@@ -374,7 +378,7 @@ b {
 }
 
 .project-section {
-	margin-top: 5rem;
+	margin-top: 6rem;
 }
 
 .project-section .sub-section-first{
