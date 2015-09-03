@@ -172,6 +172,7 @@ b {
 
 	.gallery-img {
 		background-repeat: no-repeat;
+		height: 200px !important;
 	}
 
 	.back-nav-button {
@@ -538,7 +539,7 @@ b {
 
 .gallery-img {
 	background-size: contain;
-	height: 200px;
+	height: 400px;
 	background-repeat-x: no-repeat;
 	background-repeat-y: no-repeat;
 	background-position: center;
