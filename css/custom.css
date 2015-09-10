@@ -102,6 +102,10 @@ b {
 		display: none;
 	}
 
+	.top-navbar {
+		margin-top: 3rem;
+	}
+
 }
 
 .navbar-header {
