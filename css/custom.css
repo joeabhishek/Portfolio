@@ -13,6 +13,10 @@ b {
 	margin-bottom: 0px;
 }
 
+.display-block {
+	display: block;
+}
+
 .hs-text-6 {
   position: relative;
   margin-top: 0;
