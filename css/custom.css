@@ -650,6 +650,14 @@ b {
 	margin-bottom: 3rem;
 }
 
+#contact-section {
+	padding-bottom: 0px !important;
+}
+
+#contact-section a{
+	color : #0c0c17;
+}
+
 
 
 
