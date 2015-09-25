@@ -110,6 +110,10 @@ b {
 		margin-top: 3rem;
 	}
 
+	.project-sidebar {
+		padding-left: 5%;
+	}
+
 }
 
 .navbar-header {
@@ -394,8 +398,9 @@ b {
 
 .project-intro-img {
 	display: block;
-	max-width: 80%;
+	max-width: 100%;
 	height: auto;
+	margin: auto;
 
 }
 
@@ -431,7 +436,7 @@ b {
 }
 
 .sidebar-section-first-item {
-	margin-top: 5.8rem !important;
+	margin-top: 5.6rem !important;
 }
 
 .sidebar-section p{
