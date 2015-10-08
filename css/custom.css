@@ -564,6 +564,8 @@ b {
 	margin: auto;
 	background-repeat-x: no-repeat;
 	background-repeat-y: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat ;
 }
 
 .gallery-img-3 {
@@ -574,6 +576,17 @@ b {
 	background-position: center;
 	background-repeat: no-repeat ;
 }
+
+.gallery-img-4 {
+	background-size: contain;
+	height: 750px;
+	margin: auto;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-repeat: no-repeat ;
+}
+
+
 
 .thumbnail-gallery {
 	margin-top: 1rem;
