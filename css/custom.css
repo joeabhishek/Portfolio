@@ -114,6 +114,24 @@ b {
 		padding-left: 5%;
 	}
 
+	.gallery-img-4 {
+		background-size: contain;
+		height: 750px;
+		margin: auto;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-repeat: no-repeat ;
+	}
+
+	.gallery-img-5 {
+		background-size: contain;
+		height: 165px;
+		margin: auto;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-repeat: no-repeat ;
+	}
+
 }
 
 .navbar-header {
@@ -199,6 +217,24 @@ b {
 	    line-height: 21px;
 	    font-weight: 700;
 	  }
+
+	.gallery-img-4 {
+		background-size: contain;
+		height: 350px;
+		margin: auto;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-repeat: no-repeat ;
+	}
+
+	.gallery-img-5 {
+		background-size: contain;
+		height: 100px;
+		margin: auto;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-repeat: no-repeat ;
+	}
 }
 
 .navbar-collapse {
@@ -576,17 +612,6 @@ b {
 	background-position: center;
 	background-repeat: no-repeat ;
 }
-
-.gallery-img-4 {
-	background-size: contain;
-	height: 750px;
-	margin: auto;
-	background-repeat-x: no-repeat;
-	background-repeat-y: no-repeat;
-	background-repeat: no-repeat ;
-}
-
-
 
 .thumbnail-gallery {
 	margin-top: 1rem;
