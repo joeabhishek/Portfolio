@@ -116,7 +116,7 @@ b {
 
 	.gallery-img-4 {
 		background-size: contain;
-		height: 750px;
+		height: 570px;
 		margin: auto;
 		background-repeat-x: no-repeat;
 		background-repeat-y: no-repeat;
@@ -125,13 +125,12 @@ b {
 
 	.gallery-img-5 {
 		background-size: contain;
-		height: 165px;
+		height: 200px;
 		margin: auto;
 		background-repeat-x: no-repeat;
 		background-repeat-y: no-repeat;
 		background-repeat: no-repeat ;
 	}
-
 }
 
 .navbar-header {
@@ -143,6 +142,27 @@ b {
 .pricing-body {
   /*overflow-x: auto;*/
   -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 993px) {
+
+	.gallery-img-4 {
+		background-size: contain;
+		height: 805px;
+		margin: auto;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-repeat: no-repeat ;
+	}
+
+	.gallery-img-5 {
+		background-size: contain;
+		height: 300px;
+		margin: auto;
+		background-repeat-x: no-repeat;
+		background-repeat-y: no-repeat;
+		background-repeat: no-repeat ;
+	}
 }
 
 @media (max-width: 767px) {
@@ -236,6 +256,8 @@ b {
 		background-repeat: no-repeat ;
 	}
 }
+
+
 
 .navbar-collapse {
   position: relative;
@@ -701,6 +723,15 @@ b {
 	color : #0c0c17;
 }
 
+
+.no-margin-top-bottom {
+	margin-top: 2rem !important;
+	margin-bottom: 0px !important;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0px !important;
+}
 
 
 
