@@ -8,7 +8,8 @@
 	var thumbState = {
 		'g1': 1,
 		'g2': 1,
-		'g3': 1
+		'g3': 1,
+		'g4': 1
 	}
 
 	//var activeImage = $('#gallery-active-img');
@@ -23,7 +24,9 @@
 		imageUrl = $thumbnail.css("background-image");
 		$activeImg.css("background-image", imageUrl);
 		// The following line is to obtain background image url from the css attribute
+		debugger
 		$activeImg.parent().attr("href", imageUrl.replace('url(','').replace(')',''));
+		console.log($activeImg.attr("href"));
 	}
 	var addOverlayToThumbnail = function($gallery, galleryID) {
 		var thumbnail = $gallery.find("[data-position='" + thumbState[galleryID] + "']");
@@ -34,7 +37,9 @@
 	$('.image-gallery-thumbnail').click(function(e){
 		var $gallery = $(this).parent().parent();
 		var galleryID = $gallery.attr('id');
+		console.log(galleryID);
 		var position = $(this).data('position');
+		console.log(position);
 		var $thumbnail = $gallery.find("[data-position='" + position + "']");
 		addOverlayToThumbnail($gallery, galleryID);
 		thumbState[galleryID] = position;
