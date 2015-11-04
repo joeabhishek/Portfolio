@@ -70,7 +70,7 @@ body ::selection {
  -------------------------
  */
 .section-title-heading {
-  color: #0c0c17;
+  color: #333;
 }
 .section-title-more {
   color: rgba(12, 12, 23, 0.9);

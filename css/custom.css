@@ -9,6 +9,10 @@ b {
 	color: rgba(65,65,65,1);
 }
 
+.section-title-heading span {
+  font-weight: 500;
+}
+
 .margin-bottom-0 {
 	margin-bottom: 0px;
 }
@@ -463,8 +467,9 @@ b {
 }
 
 .project-desc p, li{
-	font-weight: 500;
-	line-height: 3rem;
+	font-weight: 400;
+	line-height: 4rem;
+	color: #333;
 }
 
 .project-section {
