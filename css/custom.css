@@ -102,8 +102,10 @@ b {
 	}
 
 	.custom-section-text {
-		padding-right: 10rem;
-		padding-left: 10rem;
+		padding-right: 8rem;
+		padding-left: 8rem;
+		font-weight: 500;
+		line-height: 1.8;
 	}
 
 	.back-nav-button {
@@ -298,6 +300,8 @@ b {
 	text-align: center;
 	margin-bottom: 60px;
 	font-size: 1.7rem;
+	font-weight: 500;
+	line-height: 1.8;
 }
 
 .card-text {
@@ -534,6 +538,7 @@ b {
 	line-height: 3em;
 	font-weight: 500;
 	margin-top: 1rem;
+
 }
 
 .intro-points li {
@@ -544,6 +549,7 @@ b {
 	font-size: 2rem;
 	margin-right: 1rem;
 	color: #ff4c05;
+	top: 0.7rem;
 }
 
 .intro-points span{
@@ -763,6 +769,12 @@ b {
 
 .margin-bottom {
 	margin-bottom: 2rem;
+}
+
+.services-item-title {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: 400;
 }
 
 

@@ -2782,11 +2782,11 @@ body {
           perspective: 300px;
   text-align: center;
 }
-.services-item-title {
+/*.services-item-title {
   margin-bottom: 15px;
   margin-top: 15px;
   font-weight: 300;
-}
+}*/
 .services-section-item-icon {
   margin: 0 auto;
   font-size: 44px;
