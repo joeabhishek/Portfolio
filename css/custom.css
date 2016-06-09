@@ -680,7 +680,16 @@ b {
 	background-repeat: no-repeat ;
 }
 
-.gallery-img-4 {
+/*.gallery-img-4 {
+	background-size: contain;
+	height: 400px;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat ;
+}*/
+
+.gallery-img-6 {
 	background-size: cover;
 	height: 400px;
 	background-repeat-x: no-repeat;
