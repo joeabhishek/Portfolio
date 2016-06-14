@@ -1065,7 +1065,7 @@ hr {
 .section-title-heading {
   display: inline-block;
   font-family: 'Lato', sans-serif;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   letter-spacing: 0;
   line-height: 1.4;
   font-weight: 300;
